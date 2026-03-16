@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.agent-mcp.json
+task-state.json
+outputs/
+*.log
+.DS_Store

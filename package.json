@@ -1,0 +1,22 @@
+{
+  "name": "agent-daemon",
+  "version": "0.1.0",
+  "description": "Orchestrator daemon — polls agent-board via MCP, routes via agent-org RBAC, spawns Claude Code agents",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/daemon.ts",
+    "dev": "tsx watch src/daemon.ts",
+    "setup": "tsx src/setup.ts",
+    "diagnose": "tsx src/diagnose.ts"
+  },
+  "dependencies": {
+    "agent-org": "github:xavierau/agent-org",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}
